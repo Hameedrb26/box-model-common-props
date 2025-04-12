@@ -484,6 +484,16 @@ footer{
         - move this to the right from its original location by 25px
 */
 #section3 div::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--lt-blue);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: -50px;
+    left: 25px;
 }
 
 
@@ -505,7 +515,7 @@ footer{
             - left: 0
 */
 #section4 p:last-of-type{
-
+    margin: 1rem 0 1rem 0;
 }
 
 /* ------------- SECTION 5 STYLES ---------------- */
@@ -542,6 +552,10 @@ footer{
         - add the puppy-photo as a repeating background to the container
 */
 #bg-img-3{
+    background-color: var(--lt-blue);
+  background-image: url("images/puppy-photo.jpg");
+  background-repeat: repeat;
+  background-position: center;
     
 }
 
@@ -569,7 +583,9 @@ footer{
         - add the wood background texture from the images folder
 */
 #pattern1{
-    
+    background-color: var(--light-gray);
+    background-size: 110%;
+    background-image: url("images/wood.png");
 }
 
 /* For the second div, the pattern is from from Hero Pattern. These actually give you SVG code to paste into your CSS */
@@ -626,6 +642,7 @@ footer{
         - float the image to the right
 */
 #dog-house{
+    float: right;
     
 }
 
@@ -635,6 +652,7 @@ footer{
         - clear any floats
 */
 #section9{
+    clear: both;
     
 }
 
